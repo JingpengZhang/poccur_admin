@@ -1,0 +1,23 @@
+.root {
+  :global {
+    .info-box {
+      width: 98%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      font-size: 14px;
+      color: #111827;
+      .info-name {
+        width: 40%;
+        flex-shrink: 0;
+      }
+      a {
+        color: #111827;
+        &:hover {
+          color: var(--td-brand-color);
+        }
+      }
+    }
+  }
+}

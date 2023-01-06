@@ -1,0 +1,42 @@
+.root {
+  :global {
+    .toolBar {
+      color: #666;
+      margin-bottom: 20px;
+      .left-box {
+        display: flex;
+        width: fit-content;
+        height: 100%;
+        .type-list {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+          li {
+            height: 100%;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-radius: var(--td-radius-default);
+            white-space: nowrap;
+            &:not(:last-of-type) {
+              margin-right: 10px;
+            }
+            &:hover {
+              color: var(--td-brand-color);
+            }
+            &.active {
+              color: #fff;
+              background-color: var(--td-brand-color);
+            }
+          }
+        }
+      }
+    }
+
+    ul.list {
+      margin-top: 20px;
+    }
+  }
+}
